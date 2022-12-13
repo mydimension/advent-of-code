@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 import json
 from itertools import zip_longest, chain
-from pprint import pprint
 
 #file = "./test.txt"
 file = "./input.txt"
@@ -51,7 +50,6 @@ print(f"correct sum: {correct_sum}")
 flat = list(chain(*packets))
 flat.extend(dividers)
 bubble(flat)
-#pprint(flat)
 first = flat.index(dividers[0])
 second = flat.index(dividers[1], first)
 
